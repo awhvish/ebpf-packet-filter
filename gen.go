@@ -1,3 +1,2 @@
+//go:generate go run github.com/cilium/ebpf/cmd/bpf2go -cc clang -cflags "-O2 -g -Wall" main lb.c
 package main
-
-//go:generate go tool bpf2go -tags linux main drop_tcp.c
